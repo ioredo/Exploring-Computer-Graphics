@@ -129,7 +129,7 @@ function initShaders( gl, vertexShaderSrc, fragmentShaderSrc )
     }
 
     // This test is fairly rudimentary as it only checks on the "precision"
-    //   keyword being present in the shader.  
+    // keyword being present in the shader.  
     let src = fragmentShaderSrc;
     if ( !/precision/.test(src) ) { 
         src = "precision highp float; " + src;

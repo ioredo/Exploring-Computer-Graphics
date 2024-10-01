@@ -14,6 +14,8 @@ class Axes
     constructor(gl, vertexShader, fragmentShader) 
     {
 
+        //shader source code, string-literal, GLSL, c-like
+        //little programs for GPU to run.
         vertexShader ||= `
             uniform mat4 P;  // Projection transformation
             uniform mat4 MV; // Model-view transformation
@@ -55,6 +57,7 @@ class Axes
             }
         `;
 
+        //
         let program = initShaders(gl, vertexShader, fragmentShader);
         gl.useProgram(program);
 

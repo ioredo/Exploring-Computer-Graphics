@@ -13,6 +13,7 @@
 //Return an array, created from arguments
 function _argumentsToArray(args) 
 {
+   //apply(emptyArr=this, arr), apply(arr=this)
    return [].concat.apply([], Array.prototype.slice.apply(args));
 }
 
@@ -179,7 +180,7 @@ function mat4()   //build 4d matrix
 
    m.type = "mat4";
 
-   return m;
+   return m; //an 
 }
 
 //----------------------------------------------------------------------------
@@ -459,6 +460,7 @@ function scalem(x, y, z) {
 //
 //  ModelView Matrix Generators
 //
+// Eye, At, Up: must be vec3 format
 
 function lookAt(eye, at, up) 
 {
@@ -496,7 +498,7 @@ function lookAt(eye, at, up)
 
 //----------------------------------------------------------------------------
 //
-//  Projection Matrix Generators
+//  Projection Matrix Generators - (Orthographic / Perspective)
 //
 
 function ortho(left, right, bottom, top, near, far) {

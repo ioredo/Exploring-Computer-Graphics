@@ -18,10 +18,13 @@ function MatrixStack()
     this.mult         = (m) => { stack[0] = mult( stack[0], m ); };
     this.loadIdentity = ()  => { stack[0] = mat4(); };
     
+    
+    //takes two arguments, angle and axis
     this.rotate = (angle, axis) => { 
         stack[0] = mult( stack[0], rotate(angle, axis) );
     };
 
+    //takes three args, x, y, z
     this.scale = (x, y, z) => {
         if (Array.isArray(x)) {
             z = x[2];
@@ -35,6 +38,7 @@ function MatrixStack()
         stack[0] = mult( stack[0], scalem(x, y, z) );
     };
     
+    //takes three args, x, y, z
     this.translate = (x, y, z) => {
         if (Array.isArray(x)) {
             z = x[2];

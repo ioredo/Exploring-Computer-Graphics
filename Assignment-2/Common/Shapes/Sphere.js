@@ -93,8 +93,7 @@ class Sphere {
             program.P();
             program.color();
 
-            gl.drawArraysInstanced(gl.TRIANGLE_STRIP, 0, 
-                2*(numSlices + 1), numStrips);
+            gl.drawArraysInstanced(gl.TRIANGLE_STRIP, 0, 2*(numSlices + 1), numStrips);
 
             gl.useProgram(null);
         };
