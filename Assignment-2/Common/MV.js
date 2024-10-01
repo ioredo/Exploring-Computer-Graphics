@@ -462,6 +462,9 @@ function scalem(x, y, z) {
 //
 // Eye, At, Up: must be vec3 format
 
+//eye = center of projection
+//at = desired point "eye ->(points to)-> at"
+
 function lookAt(eye, at, up) 
 {
    if (!Array.isArray(eye) || eye.length != 3) {
@@ -522,8 +525,13 @@ function ortho(left, right, bottom, top, near, far) {
 }
 
 //----------------------------------------------------------------------------
+//perspective - select a lens for a perspective view (field of view) and
+//              how much of the world to see (aspect, near and far)
+//
+// fovy = field of view
 
-function perspective(fovy, aspect, near, far) {
+function perspective(fovy, aspect, near, far) 
+{
    let f = 1.0 / Math.tan(radians(fovy) / 2);
    let d = far - near;
 
