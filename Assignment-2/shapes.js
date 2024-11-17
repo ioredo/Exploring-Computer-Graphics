@@ -46,7 +46,6 @@ function init()
 function render() 
 {
   // Add rendering code here
-
   gl.clear(gl.COLOR_BUFFER_BIT | gl.DEPTH_BUFFER_BIT);
 
 
