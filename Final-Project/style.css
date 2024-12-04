@@ -1,0 +1,84 @@
+html {
+   height: 100%;
+   width: 100%;
+ }
+ 
+ body {
+   height: 100%;
+   width: 100%;
+   margin: 0 auto;
+ }
+ 
+ .site-container {
+   height: 100%;
+   width: 100%;
+ }
+ 
+ .content-container {
+   display: block;
+   /* border: 1px solid blue; */
+   margin-left: auto;
+   margin-right: auto;
+   height: 700px;
+   width: 700px;
+   position: relative;
+ }
+ 
+ .ctrls-container-top {
+   text-align:center;
+ }
+ 
+ /* .med-header {} */
+ 
+ .ctrl-container-mid {
+   /* border: 1px solid red; */
+   height: 70%;
+   padding-left: 5%;
+   padding-right: 5%;
+   margin: 0 auto;
+ }
+
+ #webgl-canvas {
+   display:block;
+   border: 1px solid black;
+   width: 100%;
+   height: 100%;
+ }
+ 
+ .spacer-sm {
+   display: block;
+   height: 30px;
+   width: 100%;
+ }
+ 
+ .center-box {
+   display: inline;
+   display: flex;
+   justify-content: center;
+ }
+ 
+ .ctrls-container-btm {
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   height: auto;
+   width: 100%;
+   margin-bottom: 5px;
+ }
+ 
+ .btn-ctrl {
+   display: inline-block;
+   padding: 8px;
+   width: 33%;
+   background-color: #555555;
+   border: none;
+   color: white;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 16px;
+ }
+ .btn-ctrl:hover {
+   background-color: dimgrey;
+ }
+ 
